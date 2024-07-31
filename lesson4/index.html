@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Письмо Санте</h1>
+        <p>Дорогой друг, не стесняйся и расскажи Санте о том, кто ты и о том, что ты хочешь получить на Рождество.</p>
+        <form action="successfully.html" method="GET">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" placeholder="Введите логин" required>
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            
+            <label for="fullname">Имя:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Введите полное имя" required>
+
+            <label>Пол:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мальчик</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Девочка</label>
+            </div>
+
+            <label for="birthdate">День рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="city">Город:</label>
+            <select id="city" name="city">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="novosibirsk">Новосибирск</option>
+            </select>
+
+            <label>Выбери цвет своей новой игрушки:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="red" name="toycolor" value="red">
+                <label for="red">Шапочка</label>
+
+                <input type="checkbox" id="yellow" name="toycolor" value="yellow">
+                <label for="yellow">Костюм</label>
+            </div>
+
+            <label>Ты был хорошим ребенком?</label>
+            <div class="radio-group">
+                <input type="radio" id="good_yes" name="good" value="yes" required>
+                <label for="good_yes">Да</label>
+
+                <input type="radio" id="good_no" name="good" value="no">
+                <label for="good_no">Нет</label>
+            </div>
+
+            <button type="submit">Отправить письмо Санте</button>
+        </form>
+    </div>
+</body>
+</html>

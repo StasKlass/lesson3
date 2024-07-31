@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="date"],
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group,
+.checkbox-group {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container button {
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: #4cae4c;
+}
+
+.container a {
+    display: block;
+    margin-top: 20px;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}

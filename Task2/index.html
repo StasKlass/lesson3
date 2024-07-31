@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма опроса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-form">
+        <h2>Форма опроса</h2>
+        <form id="surveyForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Пол:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+            </div>
+
+            <label>Интересы:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Спорт</label>
+
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Музыка</label>
+
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Чтение</label>
+            </div>
+
+            <label for="age">Возраст:</label>
+            <select id="age" name="age">
+                <option value="under18">До 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65plus">65 и старше</option>
+            </select>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
